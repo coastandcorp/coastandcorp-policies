@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - かんたんWiFiツール</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            line-height: 1.8;
+            color: #eee;
+            background-color: #111;
+        }
+        h1 { font-size: 1.5em; border-bottom: 2px solid #555; padding-bottom: 8px; color: #fff; }
+        h2 { font-size: 1.1em; margin-top: 2em; color: #ccc; }
+        p, li { font-size: 0.95em; }
+        .faq-item {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+        }
+        .faq-q { font-weight: bold; color: #fff; margin-bottom: 6px; }
+        .faq-a { color: #aaa; font-size: 0.93em; margin: 0; }
+        .contact-box {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+        .contact-box a { color: #888; }
+        .lang-switch { text-align: right; font-size: 0.85em; margin-bottom: 1em; }
+        .lang-switch a { color: #888; }
+        footer { margin-top: 48px; font-size: 0.8em; color: #555; text-align: center; }
+        footer a { color: #555; }
+        hr { border-color: #333; margin: 48px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="lang-switch"><a href="#english">English ↓</a></div>
+
+    <h1>サポート</h1>
+    <p><strong>かんたんWiFiツール</strong> をご利用いただきありがとうございます。</p>
+
+    <h2>よくある質問</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. WiFiチャンネルのスキャンができません。</p>
+        <p class="faq-a">WiFiがオンになっているか確認してください。また、初回起動時に位置情報の許可が必要です。システム設定 → プライバシーとセキュリティ → 位置情報サービス から「かんたんWiFiツール」を「使用中のみ許可」に設定してください。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. ネットワークデバイスが少ししか見つかりません。</p>
+        <p class="faq-a">スキャンはARP（アドレス解決プロトコル）を使用しており、同じWiFiネットワークに接続されているデバイスのみ検出できます。デバイスが機内モードや省電力状態の場合は検出されないことがあります。スキャン完了まで数秒お待ちください。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. 自分のデバイスしか表示されません。</p>
+        <p class="faq-a">WiFiルーターに接続されている他のデバイスが存在するか確認してください。有線LAN（イーサネット）で接続されているデバイスはWiFi経由では検出されない場合があります。また、ゲストネットワークに接続している場合、他のデバイスと分離されていることがあります。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. デバイスの種別やメーカーが「不明」と表示されます。</p>
+        <p class="faq-a">デバイスの種別はmDNS・SSDP・MACアドレスのメーカーデータベース（OUI）から推定しています。対応していないデバイスや一部のIoT機器は「不明」と表示されることがあります。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Pingが「失敗」と表示されます。</p>
+        <p class="faq-a">本アプリのPingはTCP接続（ポート80/443）でレイテンシを計測しています。対象デバイスでこれらのポートが閉じている場合（スマートフォンなど）は「失敗」となります。デバイスが応答しているかどうかはデバイスリストへの表示で確認できます。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. CSV/JSONのエクスポートができません。</p>
+        <p class="faq-a">まずスキャンを完了させてからエクスポートしてください。メニューバー → 「Export Device List」または「Export WiFi Scan Results」からエクスポートできます。スキャン結果がない場合はメニューが無効になります。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. 動作環境を教えてください。</p>
+        <p class="faq-a">macOS 13.0 Ventura 以降が必要です。チャンネルスキャンにはWiFiアダプターが必要です。</p>
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <p>解決しない場合は、メールにてお問い合わせください。</p>
+    <div class="contact-box">
+        <p>メール: <a href="mailto:coastandcorp@gmail.com">coastandcorp@gmail.com</a></p>
+        <p style="margin:0; font-size:0.88em; color:#666;">※お返事にお時間をいただく場合がございます。あらかじめご了承ください。</p>
+    </div>
+
+    <hr>
+
+    <h1 id="english">Support</h1>
+    <p>Thank you for using <strong>Easy WiFi Tool</strong>.</p>
+
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. WiFi channel scanning doesn't work.</p>
+        <p class="faq-a">Make sure WiFi is turned on. On first launch, location access is required. Go to System Settings → Privacy & Security → Location Services and set Easy WiFi Tool to "While Using the App".</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Only a few devices are found on the network.</p>
+        <p class="faq-a">The scanner uses ARP (Address Resolution Protocol) and can only detect devices connected to the same WiFi network. Devices in airplane mode or deep sleep may not respond. Please wait a few seconds for the scan to complete.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Only my own device is showing up.</p>
+        <p class="faq-a">Check that other devices are connected to the same WiFi router. Devices connected via wired Ethernet may not appear. If you are on a guest network, client isolation may prevent other devices from being visible.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Device type or manufacturer shows as "Unknown".</p>
+        <p class="faq-a">Device type is estimated from mDNS, SSDP, and the MAC address OUI database. Some IoT devices or uncommon hardware may not be identified.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Ping shows "Failed" for some devices.</p>
+        <p class="faq-a">The app measures latency via TCP connections to ports 80 and 443. Devices without these ports open (e.g., smartphones) will show "Failed". The device being listed at all means it was detected on the network.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. CSV/JSON export is not working.</p>
+        <p class="faq-a">Complete a scan first, then use the menu bar → "Export Device List" or "Export WiFi Scan Results". The menu item is disabled when there are no results.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. What are the system requirements?</p>
+        <p class="faq-a">macOS 13.0 Ventura or later is required. A WiFi adapter is required for channel scanning.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="contact-box">
+        <p>Email: <a href="mailto:coastandcorp@gmail.com">coastandcorp@gmail.com</a></p>
+    </div>
+
+    <footer>
+        <p><a href="wifi-privacy-policy.html">Privacy Policy / プライバシーポリシー</a></p>
+        <p>&copy; 2026 Coast and Corp</p>
+    </footer>
+</body>
+</html>
