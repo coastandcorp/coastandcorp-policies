@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サポート - MeshRelay</title>
+    <title>サポート / Support - MeshRelay</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -26,6 +26,11 @@
         }
         .faq-q { font-weight: bold; color: #fff; margin-bottom: 6px; }
         .faq-a { color: #aaa; font-size: 0.93em; margin: 0; }
+        .section-divider {
+            border: none;
+            border-top: 3px solid #2c7be5;
+            margin: 48px 0 32px;
+        }
         .contact-box {
             background: #252525;
             border: 1px solid #333;
@@ -40,7 +45,12 @@
     </style>
 </head>
 <body>
-    <h1>サポート - MeshRelay</h1>
+
+<!-- ============================================================ -->
+<!--  日本語                                                       -->
+<!-- ============================================================ -->
+
+    <h1>サポート — MeshRelay</h1>
     <p><strong>MeshRelay</strong> をご利用いただきありがとうございます。<br>
     MeshRelayは、サーバー不要・インターネット不要で近くのユーザーとチャットできる、P2Pメッシュ通信アプリです。</p>
 
@@ -122,6 +132,31 @@
         <p class="faq-a">「プロフィール」タブで表示名・一言コメント・連絡先情報などを編集できます。</p>
     </div>
 
+    <h2>バックグラウンドモードと通知</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. バックグラウンドモードとは何ですか？</p>
+        <p class="faq-a">「プロフィール」タブの「バックグラウンドモード」をONにすると、アプリをバックグラウンドに移動した後もBluetooth通信を継続し、メッセージを受信できます。OFFにするとフォアグラウンド時のみ動作するバッテリー節約モードになります。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. アプリを使っていない時でもメッセージを受け取れますか？</p>
+        <p class="faq-a">バックグラウンドモードがONの場合、アプリがバックグラウンドにある間もメッセージを受信し、ロック画面・通知センターにプッシュ通知を表示します。また、近くに他のMeshRelayユーザーがいる場合はiBeacon（Bluetooth）でアプリを自動起動して受信できます。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. 通知が表示されません。</p>
+        <p class="faq-a">以下をご確認ください：<br>
+        ① iOSの設定→通知→MeshRelay で通知が許可されているか確認する<br>
+        ② 「プロフィール」タブでバックグラウンドモードがONになっているか確認する<br>
+        ③ おやすみモード（集中モード）が有効になっていないか確認する</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. アプリアイコンのバッジが表示されません。</p>
+        <p class="faq-a">iOSの設定→通知→MeshRelay でバッジの表示が許可されているか確認してください。未読メッセージがある間はバッジが表示され、会話を開いて既読にすると消えます。</p>
+    </div>
+
     <h2>接続トラブル</h2>
 
     <div class="faq-item">
@@ -163,8 +198,161 @@
         <p style="margin:0; font-size:0.88em; color:#666;">※お返事にお時間をいただく場合がございます。あらかじめご了承ください。</p>
     </div>
 
+<!-- ============================================================ -->
+<!--  English                                                      -->
+<!-- ============================================================ -->
+
+    <hr class="section-divider">
+
+    <h1>Support — MeshRelay</h1>
+    <p>Thank you for using <strong>MeshRelay</strong> — a serverless, peer-to-peer mesh messaging app that works without an internet connection.</p>
+
+    <h2>Getting Started</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. What do I need to set up on first launch?</p>
+        <p class="faq-a">Enter a display name (required, up to 32 characters). You can optionally add your birth year &amp; month, a short comment (up to 20 characters), and profile details (gender, contact info, etc.). Your birth year &amp; month is used only for age verification and is never sent to external servers.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. What kind of environment does it work in?</p>
+        <p class="faq-a">MeshRelay works anywhere Bluetooth or Wi-Fi is available — no internet or shared network required (Wi-Fi Direct is also supported). You can communicate in real time with nearby iOS and macOS devices.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Which devices are supported?</p>
+        <p class="faq-a">iPhone and iPad running iOS 17 or later, and Mac running macOS 14 or later.</p>
+    </div>
+
+    <h2>Adding &amp; Managing Peers</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I find nearby users?</p>
+        <p class="faq-a">Open the Discover tab. Other MeshRelay users within Bluetooth range appear automatically. Tap a user and press "Register this Peer" to add them as a contact.<br>※ Peer Discovery is available only to users who have entered their birth year &amp; month and are confirmed to be 18 or older.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I add a peer via QR code?</p>
+        <p class="faq-a">Tap "Add via QR Code" in the Discover tab or the QR icon in the Profile tab. Show your QR code to the other person or scan theirs with your camera. This method is available to all users regardless of age.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I remove a registered peer?</p>
+        <p class="faq-a">Tap the peer in the Discover tab to open their Peer Info screen, then select "Delete this Peer." After deletion, they will appear again as an unregistered peer if they are nearby.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I block a peer?</p>
+        <p class="faq-a">On the Peer Info screen, tap "Block this Peer." Messages from blocked peers will no longer be received. You can unblock them from the same screen.</p>
+    </div>
+
+    <h2>Messaging</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I send a text message?</p>
+        <p class="faq-a">Tap a registered peer to open the conversation, type your message in the input field at the bottom, and tap the send button.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I send photos, videos, or voice messages?</p>
+        <p class="faq-a">Long-press the send button in the conversation to see options for Photo, Video, and Voice Message. For voice messages, a recording bar appears — tap send when you're done recording.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How can I see if my message was delivered?</p>
+        <p class="faq-a">Sent messages show a delivery checkmark (✓✓). The unread badge on the conversation list is cleared automatically when you open the conversation.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Can I unsend a message?</p>
+        <p class="faq-a">Long-press a sent message to see the unsend option. Note that if the recipient has already received the message, it may not be possible to retract it.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. What happens when the recipient is offline?</p>
+        <p class="faq-a">MeshRelay is a real-time P2P app, so communication requires the other device to be nearby and detectable via Bluetooth or Wi-Fi. When the recipient is offline, the message is relayed through the mesh network and delivered once they come within range.</p>
+    </div>
+
+    <h2>Profile &amp; Settings</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I set a profile photo?</p>
+        <p class="faq-a">Tap the avatar icon in the Profile tab, then take a photo or choose one from your library. The image is shared only via direct P2P communication.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I change my display name or profile?</p>
+        <p class="faq-a">Go to the Profile tab to edit your display name, comment, and contact details.</p>
+    </div>
+
+    <h2>Background Mode &amp; Notifications</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. What is Background Mode?</p>
+        <p class="faq-a">When Background Mode is ON (Profile tab), the app continues Bluetooth communication even while in the background, allowing you to receive messages. Turning it OFF enables a battery-saving mode where the app only runs in the foreground.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Can I receive messages when I'm not actively using the app?</p>
+        <p class="faq-a">Yes, when Background Mode is ON. Messages are received in the background and displayed as notifications on your lock screen and notification center. If a nearby MeshRelay user is detected via iBeacon (Bluetooth), the app can also be launched automatically in the background.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. I'm not receiving notifications.</p>
+        <p class="faq-a">Please check the following:<br>
+        ① Go to Settings → Notifications → MeshRelay and confirm notifications are allowed<br>
+        ② Make sure Background Mode is ON in the Profile tab<br>
+        ③ Check that Do Not Disturb / Focus mode is not active</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. The app icon badge isn't showing.</p>
+        <p class="faq-a">Go to Settings → Notifications → MeshRelay and confirm that badges are enabled. The badge appears while you have unread messages and is cleared when you open the conversation.</p>
+    </div>
+
+    <h2>Connection Issues</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. A nearby user isn't showing up.</p>
+        <p class="faq-a">Please check the following:<br>
+        ① MeshRelay is open on both devices<br>
+        ② Bluetooth and Wi-Fi are enabled on both devices<br>
+        ③ Local Network access is allowed in Settings → MeshRelay<br>
+        ④ Try force-quitting and relaunching the app<br>
+        ⑤ Make sure you are within approximately 10 meters of each other</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. The connection drops intermittently.</p>
+        <p class="faq-a">Bluetooth signals can be blocked by walls, obstacles, and interference. Use the app as close together as possible with a clear line of sight. When Wi-Fi is available, Wi-Fi Direct is also used, which improves stability.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. The app asked for Local Network access. Is that required?</p>
+        <p class="faq-a">Yes. MeshRelay uses it for P2P communication over Wi-Fi and AWDL (Wi-Fi Direct). Bluetooth-only communication still works without it, but speed and stability may be reduced.</p>
+    </div>
+
+    <h2>Security &amp; Privacy</h2>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Are messages encrypted?</p>
+        <p class="faq-a">Yes. All messages are end-to-end encrypted (E2EE). No one can read the content in transit. Encryption keys are stored only on your device.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Is my data sent to a server?</p>
+        <p class="faq-a">No. MeshRelay has no servers and makes no internet connections. All data stays on your device or is exchanged directly via P2P.</p>
+    </div>
+
+    <h2>Contact Support</h2>
+    <p>For questions, feature requests, or bug reports, please contact us by email.</p>
+    <div class="contact-box">
+        <p>Email: <a href="mailto:coastandcorp@gmail.com">coastandcorp@gmail.com</a></p>
+        <p style="margin:0; font-size:0.88em; color:#666;">We typically respond within a few business days.</p>
+    </div>
+
     <footer>
-        <p><a href="meshchat-privacy-policy.html">プライバシーポリシー</a></p>
+        <p><a href="meshchat-privacy-policy.html">プライバシーポリシー / Privacy Policy</a></p>
         <p>&copy; 2026 Coast and Corp</p>
     </footer>
 </body>
