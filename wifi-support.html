@@ -82,7 +82,7 @@
 
     <div class="faq-item">
         <p class="faq-q">Q. Ping が「N/A」と表示されます。</p>
-        <p class="faq-a">本アプリの Ping は複数の TCP ポートへの接続を試みてレイテンシを計測しています。対象デバイスがすべての TCP プローブをブロックしている場合（ファイアウォール設定など）は「N/A」と表示されます。デバイスがリストに表示されていること自体は、ネットワーク上での存在を意味します。</p>
+        <p class="faq-a">本アプリの Ping は、macOS サンドボックスの制限により ICMP（標準的な ping コマンド）が使えないため、TCP ハンドシェイクの応答時間でレイテンシを代替計測しています。HTTP(80)・HTTPS(443)・SSH(22)・DNS(53)・SMB(445) など8つのポートを並列に試し、最初に応答したポートで3回計測した平均値を表示します。すべてのポートがブロックされている場合（ファイアウォール設定など）は「N/A」と表示されますが、デバイスがリストに表示されていること自体はネットワーク上での存在を意味します。</p>
     </div>
 
     <div class="faq-item">
@@ -176,7 +176,7 @@
 
     <div class="faq-item">
         <p class="faq-q">Q. Ping shows "N/A" for some devices.</p>
-        <p class="faq-a">The app measures latency by probing multiple TCP ports. If a device blocks all TCP probes (e.g., due to a firewall), "N/A" is displayed. The device appearing in the list at all confirms it was detected on the network via ARP.</p>
+        <p class="faq-a">Due to macOS sandbox restrictions, this app cannot use ICMP (the protocol used by the standard ping command). Instead, it measures latency using TCP handshake time. Eight common ports — HTTP (80), HTTPS (443), SSH (22), DNS (53), SMB (445), and others — are probed in parallel. The first port to respond is used for three measurements, and the average is displayed. If all ports are blocked (e.g., by a firewall), "N/A" is shown. The device still appearing in the list confirms it was detected on the network via ARP.</p>
     </div>
 
     <div class="faq-item">
