@@ -56,6 +56,16 @@
     </div>
 
     <div class="faq-item">
+        <p class="faq-q">Q. ネットワーク名（SSID）が表示されません。</p>
+        <p class="faq-a">macOS のセキュリティ仕様により、WiFiネットワーク名（SSID）の表示には位置情報のアクセス許可が必要です。チャンネルタブに「設定を開く」ボタンが表示されている場合は、タップしてシステム設定から位置情報を許可してください。設定変更後にアプリへ戻ると自動的に更新されます。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. チャンネルの「2.4 GHz」「5 GHz」「6 GHz」の切り替えはどこですか？</p>
+        <p class="faq-a">チャンネルタブ上部のツールバーにある「帯域」セグメントコントロールで切り替えられます。お使いのMacのWiFiアダプターが対応している帯域のみ表示されます。</p>
+    </div>
+
+    <div class="faq-item">
         <p class="faq-q">Q. デバイスリストにデバイスが少ししか見つかりません。</p>
         <p class="faq-a">スキャンはARP（アドレス解決プロトコル）を使用しており、同じWiFiネットワークに接続されているデバイスのみ検出できます。デバイスが機内モードや省電力状態の場合は検出されないことがあります。スキャン完了まで数秒お待ちください。</p>
     </div>
@@ -77,12 +87,17 @@
 
     <div class="faq-item">
         <p class="faq-q">Q. デバイスの詳細情報を確認するには？</p>
-        <p class="faq-a">デバイスリストの行をダブルクリックするか、行を選択してツールバーの「ⓘ」ボタンを押すと詳細画面が開きます。IPv4 / IPv6・MAC アドレス・メーカー・mDNS サービス・開放ポート・初回検出日時などが確認できます。</p>
+        <p class="faq-a">デバイスリストの行をダブルクリックするか、行を選択してツールバーの「ⓘ」ボタンを押すと詳細画面が開きます。IPv4 / IPv6・MAC アドレス・メーカー・名前・mDNS・ホスト名・HTTP/SSH バナー・開放ポート・初回検出日時・Wake on LAN などが確認できます。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. IPv6アドレスはどこで確認できますか？</p>
+        <p class="faq-a">デバイス詳細画面（行をダブルクリックまたはツールバーの「ⓘ」ボタン）の「ネットワーク」セクションに IPv6 アドレスが表示されます。グローバルアドレスがリンクローカルアドレス（fe80:...）より上に表示されます。</p>
     </div>
 
     <div class="faq-item">
         <p class="faq-q">Q. 開放ポートのスキャンはどのように動作しますか？</p>
-        <p class="faq-a">デバイス詳細画面（またはPingスキャン時）に、HTTP・SSH・SMB・RDP・VNCなど22種類の一般的なポートへの TCP 接続を試み、応答のあったポートを表示します。スキャン対象はローカルネットワーク内のデバイスのみです。</p>
+        <p class="faq-a">デバイス詳細画面（またはPingスキャン時）に、HTTP・HTTPS・SSH・SMB・RDP・VNC・AirPlay・IPP・FTP など23種類の一般的なポートへの TCP 接続を試み、応答のあったポートをバッジ形式で表示します。スキャン対象はローカルネットワーク内のデバイスのみです。</p>
     </div>
 
     <div class="faq-item">
@@ -97,12 +112,17 @@
 
     <div class="faq-item">
         <p class="faq-q">Q. ネットワークトポロジーとは何ですか？</p>
-        <p class="faq-a">デバイスタブ内の「トポロジー」セクションに、スキャンで見つかったデバイスの接続関係を図として表示します。ルーター・AP を中心に、各デバイスが接続されている様子を視覚的に確認できます。スキャンを実行するとグラフが更新されます。</p>
+        <p class="faq-a">デバイスタブ下部に、スキャンで見つかったデバイスの接続関係を図として表示します。ルーター・AP を中心に各デバイスが放射状に配置され、ネットワーク構成を視覚的に確認できます。スキャンを実行するたびに更新されます。</p>
     </div>
 
     <div class="faq-item">
         <p class="faq-q">Q. CSV/JSONのエクスポートができません。</p>
         <p class="faq-a">まずスキャンを完了させてからエクスポートしてください。メニューバー → 「Export Device List」または「Export WiFi Scan Results」からエクスポートできます。スキャン結果がない場合はメニューが無効になります。</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. サポートページはどこから開けますか？</p>
+        <p class="faq-a">メニューバーの「ヘルプ」→「かんたんWiFiツール サポート」からいつでもこのページを開けます。</p>
     </div>
 
     <div class="faq-item">
@@ -130,7 +150,17 @@
     </div>
 
     <div class="faq-item">
-        <p class="faq-q">Q. Only a few devices are found on the network.</p>
+        <p class="faq-q">Q. Network names (SSIDs) are not displayed.</p>
+        <p class="faq-a">Due to macOS security requirements, location access is needed to display WiFi network names (SSIDs). If the Channel tab shows an "Open Settings" button, tap it to grant access in System Settings. The app updates automatically when you return after granting permission.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Where do I switch between 2.4 GHz, 5 GHz, and 6 GHz?</p>
+        <p class="faq-a">Use the "Band" segmented control in the toolbar at the top of the Channel tab. Only bands supported by your Mac's WiFi adapter are shown.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Only a few devices are found in the device list.</p>
         <p class="faq-a">The scanner uses ARP (Address Resolution Protocol) and can only detect devices connected to the same WiFi network. Devices in airplane mode or deep sleep may not respond. Please wait a few seconds for the scan to complete.</p>
     </div>
 
@@ -151,12 +181,17 @@
 
     <div class="faq-item">
         <p class="faq-q">Q. How do I view device details?</p>
-        <p class="faq-a">Double-click any row in the device list, or select a row and click the "ⓘ" button in the toolbar. The detail view shows IPv4/IPv6, MAC address, manufacturer, open ports, mDNS services, and the date the device was first seen.</p>
+        <p class="faq-a">Double-click any row in the device list, or select a row and click the "ⓘ" button in the toolbar. The detail view shows IPv4/IPv6 addresses, MAC address, manufacturer, name, mDNS, hostname, HTTP/SSH banners, open ports, date first seen, and Wake on LAN.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. Where can I see the IPv6 address?</p>
+        <p class="faq-a">IPv6 addresses appear in the "Network" section of the device detail view (double-click a row or click the "ⓘ" toolbar button). Global addresses are listed above link-local addresses (fe80:...).</p>
     </div>
 
     <div class="faq-item">
         <p class="faq-q">Q. How does open port scanning work?</p>
-        <p class="faq-a">When viewing device details or running a Ping scan, the app attempts TCP connections to 22 common ports (HTTP, SSH, SMB, RDP, VNC, and others). Ports that accept connections are listed as open. Scanning is limited to devices on the local network.</p>
+        <p class="faq-a">When viewing device details or running a Ping scan, the app attempts TCP connections to 23 common ports (HTTP, HTTPS, SSH, SMB, RDP, VNC, AirPlay, IPP, FTP, and others). Ports that accept connections are shown as badge labels. Scanning is limited to devices on the local network.</p>
     </div>
 
     <div class="faq-item">
@@ -171,12 +206,17 @@
 
     <div class="faq-item">
         <p class="faq-q">Q. What is the Network Topology view?</p>
-        <p class="faq-a">The Topology section in the Devices tab displays a visual map of your network showing how detected devices connect to your router/access point. The graph updates each time you run a scan.</p>
+        <p class="faq-a">The lower section of the Devices tab shows a visual map of your network. Detected devices are arranged radially around the router/access point so you can see your network layout at a glance. The graph updates each time you run a scan.</p>
     </div>
 
     <div class="faq-item">
         <p class="faq-q">Q. CSV/JSON export is not working.</p>
         <p class="faq-a">Complete a scan first, then use the menu bar → "Export Device List" or "Export WiFi Scan Results". The menu item is disabled when there are no results.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="faq-q">Q. How do I open this support page again?</p>
+        <p class="faq-a">From the menu bar, choose Help → "Easy WiFi Tool Support" to open this page at any time.</p>
     </div>
 
     <div class="faq-item">
